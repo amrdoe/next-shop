@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Header from "#components/Navigation";
+import Navigation from "#components/Navigation";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>My Shop</title>
+        <title>About - My Shop</title>
       </Head>
-      <Header />
+      <Navigation />
     </div>
   );
 }
