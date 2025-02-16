@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "#components/Navigation";
 import Hero from "#components/Hero";
 import Products from "#components/Products";
+import Newsletters from "#components/Newsletters";
 
 const products = [
   {
@@ -43,6 +44,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Products title="Featured Products" products={products} />
+      <Newsletters />
     </div>
   );
 }
