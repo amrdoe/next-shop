@@ -1,5 +1,6 @@
 import Link from "./Link";
-import { ShoppingCart, Search, Menu, Heart } from "lucide-react";
+import { Search, Menu, Heart } from "lucide-react";
+import ShoppingCart from "./ShoppingCart";
 
 export default function Navigation() {
   return (
@@ -20,7 +21,7 @@ export default function Navigation() {
           <div className="flex items-center space-x-4">
             <Search className="h-6 w-6 text-gray-400 hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400 cursor-pointer" />
             <Heart className="h-6 w-6 text-gray-400 hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400 cursor-pointer" />
-            <ShoppingCart className="h-6 w-6 text-gray-400 hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400 cursor-pointer" />
+            <ShoppingCart />
           </div>
         </div>
       </div>

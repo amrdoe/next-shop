@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CartControls from "./CartControls";
 
 interface Props {
   title?: string;
@@ -31,9 +32,7 @@ export default function Products({ title, products = [] }: Props) {
                 height={800}
                 className="w-full h-64 object-cover rounded-lg"
               />
-              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white dark:bg-black text-black dark:text-white px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Add to Cart
-              </button>
+              <CartControls id={product.id} />
             </div>
             <div className="mt-4">
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">

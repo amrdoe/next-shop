@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Header from "#components/Navigation";
-import Hero from "#components/Hero";
-import Products from "#components/Products";
-import Newsletters from "#components/Newsletters";
+import Header from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Products from "@/components/Products";
+import Newsletters from "@/components/Newsletters";
+import { CartProvider } from "@/lib/cart";
 
 const products = [
   {
@@ -37,7 +38,7 @@ const products = [
 
 export default function Home() {
   return (
-    <div>
+    <CartProvider>
       <Head>
         <title>My Shop</title>
       </Head>
@@ -45,6 +46,6 @@ export default function Home() {
       <Hero />
       <Products title="Featured Products" products={products} />
       <Newsletters />
-    </div>
+    </CartProvider>
   );
 }
